@@ -12,6 +12,7 @@ import org.apache.thrift.transport.TServerSocket;
  */
 public class HelloWorldSimpleServer {
     public static final int SERVER_PORT = 8090;
+
     public void startServer() {
         try {
             System.out.println("HelloWorld TSimpleServer start ....");
@@ -33,6 +34,7 @@ public class HelloWorldSimpleServer {
             e.printStackTrace();
         }
     }
+
     public static void main(String[] args) {
         HelloWorldSimpleServer server = new HelloWorldSimpleServer();
         server.startServer();
